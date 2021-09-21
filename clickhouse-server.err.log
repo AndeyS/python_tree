@@ -1,0 +1,38 @@
+2021.09.21 12:48:56.442880 [ 2971 ] {01095520-ae1e-4598-84ad-beda48c88c4d} <Error> executeQuery: Code: 84. DB::Exception: Directory /var/lib/clickhouse/shadow/dc8d56d68b2d4345b91bb5c0f60f3401/data/petshop/crm_discount_wholesale_personal/0_1_1_11 already exists and is not empty. (DIRECTORY_ALREADY_EXISTS) (version 21.9.2.17 (official build)) (from 127.0.0.1:35984) (in query: ALTER TABLE `petshop`.`crm_discount_wholesale_personal` FREEZE WITH NAME 'dc8d56d68b2d4345b91bb5c0f60f3401';), Stack trace (when copying this message, always include the lines below):
+
+0. DB::Exception::Exception(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, int, bool) @ 0x9366e7a in /usr/lib/debug/.build-id/e4/f05abb2100332308613c22030a03f5a4621821.debug
+1. DB::localBackup(std::__1::shared_ptr<DB::IDisk> const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::optional<unsigned long>) @ 0x1166b0e4 in /usr/lib/debug/.build-id/e4/f05abb2100332308613c22030a03f5a4621821.debug
+2. DB::MergeTreeData::freezePartitionsByMatcher(std::__1::function<bool (std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)>, std::__1::shared_ptr<DB::StorageInMemoryMetadata const> const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::shared_ptr<DB::Context const>) @ 0x114a32ff in /usr/lib/debug/.build-id/e4/f05abb2100332308613c22030a03f5a4621821.debug
+3. DB::MergeTreeData::freezeAll(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::shared_ptr<DB::StorageInMemoryMetadata const> const&, std::__1::shared_ptr<DB::Context const>, std::__1::shared_ptr<DB::RWLockImpl::LockHolderImpl>&) @ 0x1148d177 in /usr/lib/debug/.build-id/e4/f05abb2100332308613c22030a03f5a4621821.debug
+4. DB::MergeTreeData::alterPartition(std::__1::shared_ptr<DB::StorageInMemoryMetadata const> const&, std::__1::vector<DB::PartitionCommand, std::__1::allocator<DB::PartitionCommand> > const&, std::__1::shared_ptr<DB::Context const>) @ 0x1148a87c in /usr/lib/debug/.build-id/e4/f05abb2100332308613c22030a03f5a4621821.debug
+5. DB::InterpreterAlterQuery::execute() @ 0x108d8f8f in /usr/lib/debug/.build-id/e4/f05abb2100332308613c22030a03f5a4621821.debug
+6. DB::executeQueryImpl(char const*, char const*, std::__1::shared_ptr<DB::Context>, bool, DB::QueryProcessingStage::Enum, bool, DB::ReadBuffer*) @ 0x10ee2244 in /usr/lib/debug/.build-id/e4/f05abb2100332308613c22030a03f5a4621821.debug
+7. DB::executeQuery(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::shared_ptr<DB::Context>, bool, DB::QueryProcessingStage::Enum, bool) @ 0x10ee02e3 in /usr/lib/debug/.build-id/e4/f05abb2100332308613c22030a03f5a4621821.debug
+8. DB::TCPHandler::runImpl() @ 0x117a03d0 in /usr/lib/debug/.build-id/e4/f05abb2100332308613c22030a03f5a4621821.debug
+9. DB::TCPHandler::run() @ 0x117b2cb9 in /usr/lib/debug/.build-id/e4/f05abb2100332308613c22030a03f5a4621821.debug
+10. Poco::Net::TCPServerConnection::start() @ 0x143720af in /usr/lib/debug/.build-id/e4/f05abb2100332308613c22030a03f5a4621821.debug
+11. Poco::Net::TCPServerDispatcher::run() @ 0x14373b3a in /usr/lib/debug/.build-id/e4/f05abb2100332308613c22030a03f5a4621821.debug
+12. Poco::PooledThread::run() @ 0x144a69b9 in /usr/lib/debug/.build-id/e4/f05abb2100332308613c22030a03f5a4621821.debug
+13. Poco::ThreadImpl::runnableEntry(void*) @ 0x144a2c4a in /usr/lib/debug/.build-id/e4/f05abb2100332308613c22030a03f5a4621821.debug
+14. start_thread @ 0x7ea5 in /usr/lib64/libpthread-2.17.so
+15. __clone @ 0xfe9fd in /usr/lib64/libc-2.17.so
+
+2021.09.21 12:48:56.443352 [ 2971 ] {01095520-ae1e-4598-84ad-beda48c88c4d} <Error> TCPHandler: Code: 84. DB::Exception: Directory /var/lib/clickhouse/shadow/dc8d56d68b2d4345b91bb5c0f60f3401/data/petshop/crm_discount_wholesale_personal/0_1_1_11 already exists and is not empty. (DIRECTORY_ALREADY_EXISTS), Stack trace (when copying this message, always include the lines below):
+
+0. DB::Exception::Exception(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, int, bool) @ 0x9366e7a in /usr/lib/debug/.build-id/e4/f05abb2100332308613c22030a03f5a4621821.debug
+1. DB::localBackup(std::__1::shared_ptr<DB::IDisk> const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::optional<unsigned long>) @ 0x1166b0e4 in /usr/lib/debug/.build-id/e4/f05abb2100332308613c22030a03f5a4621821.debug
+2. DB::MergeTreeData::freezePartitionsByMatcher(std::__1::function<bool (std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)>, std::__1::shared_ptr<DB::StorageInMemoryMetadata const> const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::shared_ptr<DB::Context const>) @ 0x114a32ff in /usr/lib/debug/.build-id/e4/f05abb2100332308613c22030a03f5a4621821.debug
+3. DB::MergeTreeData::freezeAll(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::shared_ptr<DB::StorageInMemoryMetadata const> const&, std::__1::shared_ptr<DB::Context const>, std::__1::shared_ptr<DB::RWLockImpl::LockHolderImpl>&) @ 0x1148d177 in /usr/lib/debug/.build-id/e4/f05abb2100332308613c22030a03f5a4621821.debug
+4. DB::MergeTreeData::alterPartition(std::__1::shared_ptr<DB::StorageInMemoryMetadata const> const&, std::__1::vector<DB::PartitionCommand, std::__1::allocator<DB::PartitionCommand> > const&, std::__1::shared_ptr<DB::Context const>) @ 0x1148a87c in /usr/lib/debug/.build-id/e4/f05abb2100332308613c22030a03f5a4621821.debug
+5. DB::InterpreterAlterQuery::execute() @ 0x108d8f8f in /usr/lib/debug/.build-id/e4/f05abb2100332308613c22030a03f5a4621821.debug
+6. DB::executeQueryImpl(char const*, char const*, std::__1::shared_ptr<DB::Context>, bool, DB::QueryProcessingStage::Enum, bool, DB::ReadBuffer*) @ 0x10ee2244 in /usr/lib/debug/.build-id/e4/f05abb2100332308613c22030a03f5a4621821.debug
+7. DB::executeQuery(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::shared_ptr<DB::Context>, bool, DB::QueryProcessingStage::Enum, bool) @ 0x10ee02e3 in /usr/lib/debug/.build-id/e4/f05abb2100332308613c22030a03f5a4621821.debug
+8. DB::TCPHandler::runImpl() @ 0x117a03d0 in /usr/lib/debug/.build-id/e4/f05abb2100332308613c22030a03f5a4621821.debug
+9. DB::TCPHandler::run() @ 0x117b2cb9 in /usr/lib/debug/.build-id/e4/f05abb2100332308613c22030a03f5a4621821.debug
+10. Poco::Net::TCPServerConnection::start() @ 0x143720af in /usr/lib/debug/.build-id/e4/f05abb2100332308613c22030a03f5a4621821.debug
+11. Poco::Net::TCPServerDispatcher::run() @ 0x14373b3a in /usr/lib/debug/.build-id/e4/f05abb2100332308613c22030a03f5a4621821.debug
+12. Poco::PooledThread::run() @ 0x144a69b9 in /usr/lib/debug/.build-id/e4/f05abb2100332308613c22030a03f5a4621821.debug
+13. Poco::ThreadImpl::runnableEntry(void*) @ 0x144a2c4a in /usr/lib/debug/.build-id/e4/f05abb2100332308613c22030a03f5a4621821.debug
+14. start_thread @ 0x7ea5 in /usr/lib64/libpthread-2.17.so
+15. __clone @ 0xfe9fd in /usr/lib64/libc-2.17.so
+

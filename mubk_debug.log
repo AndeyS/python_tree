@@ -1,0 +1,294 @@
+2021/09/21 12:47:16 debug SELECT name, engine FROM system.databases WHERE name != 'system'
+2021/09/21 12:47:16 debug SHOW CREATE DATABASE `default`
+2021/09/21 12:47:16 debug SHOW CREATE DATABASE `jdbc`
+2021/09/21 12:47:16 debug SHOW CREATE DATABASE `petshop`
+2021/09/21 12:47:16 debug SHOW CREATE DATABASE `temp`
+2021/09/21 12:47:16 debug SELECT count() FROM system.settings WHERE name = 'show_table_uuid_in_table_create_query_if_not_nil'
+2021/09/21 12:47:16 debug SELECT name FROM system.databases WHERE engine IN ('MySQL','PostgreSQL')
+2021/09/21 12:47:16 debug SELECT * FROM system.tables WHERE is_temporary = 0 SETTINGS show_table_uuid_in_table_create_query_if_not_nil=1
+2021/09/21 12:47:16 debug SELECT database, table, sum(bytes_on_disk) as size FROM system.parts GROUP BY database, table;
+2021/09/21 12:47:16 debug SELECT value FROM `system`.`build_options` where name='VERSION_INTEGER'
+2021/09/21 12:47:16 debug SELECT * FROM system.disks;
+2021/09/21 12:47:16 debug SELECT * FROM system.disks;
+2021/09/21 12:47:16 debug SELECT * FROM system.disks;
+2021/09/21 12:47:16 debug create data               backup=mybk operation=create table=jdbc.crm_area
+2021/09/21 12:47:16 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_area
+2021/09/21 12:47:16 debug create metadata           backup=mybk operation=create table=jdbc.crm_area
+2021/09/21 12:47:16  info done                      backup=mybk operation=create table=jdbc.crm_area
+2021/09/21 12:47:16 debug create data               backup=mybk operation=create table=jdbc.crm_business_category
+2021/09/21 12:47:16 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_business_category
+2021/09/21 12:47:16 debug create metadata           backup=mybk operation=create table=jdbc.crm_business_category
+2021/09/21 12:47:16  info done                      backup=mybk operation=create table=jdbc.crm_business_category
+2021/09/21 12:47:16 debug create data               backup=mybk operation=create table=jdbc.crm_category
+2021/09/21 12:47:16 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_category
+2021/09/21 12:47:16 debug create metadata           backup=mybk operation=create table=jdbc.crm_category
+2021/09/21 12:47:16  info done                      backup=mybk operation=create table=jdbc.crm_category
+2021/09/21 12:47:16 debug create data               backup=mybk operation=create table=jdbc.crm_category_product
+2021/09/21 12:47:16 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_category_product
+2021/09/21 12:47:16 debug create metadata           backup=mybk operation=create table=jdbc.crm_category_product
+2021/09/21 12:47:16  info done                      backup=mybk operation=create table=jdbc.crm_category_product
+2021/09/21 12:47:16 debug create data               backup=mybk operation=create table=jdbc.crm_category_product1
+2021/09/21 12:47:16 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_category_product1
+2021/09/21 12:47:16 debug create metadata           backup=mybk operation=create table=jdbc.crm_category_product1
+2021/09/21 12:47:16  info done                      backup=mybk operation=create table=jdbc.crm_category_product1
+2021/09/21 12:47:16 debug create data               backup=mybk operation=create table=jdbc.crm_category_product2
+2021/09/21 12:47:16 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_category_product2
+2021/09/21 12:47:16 debug create metadata           backup=mybk operation=create table=jdbc.crm_category_product2
+2021/09/21 12:47:16  info done                      backup=mybk operation=create table=jdbc.crm_category_product2
+2021/09/21 12:47:16 debug create data               backup=mybk operation=create table=jdbc.crm_city
+2021/09/21 12:47:16 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_city
+2021/09/21 12:47:16 debug create metadata           backup=mybk operation=create table=jdbc.crm_city
+2021/09/21 12:47:16  info done                      backup=mybk operation=create table=jdbc.crm_city
+2021/09/21 12:47:16 debug create data               backup=mybk operation=create table=jdbc.crm_city1
+2021/09/21 12:47:16 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_city1
+2021/09/21 12:47:16 debug create metadata           backup=mybk operation=create table=jdbc.crm_city1
+2021/09/21 12:47:16  info done                      backup=mybk operation=create table=jdbc.crm_city1
+2021/09/21 12:47:16 debug create data               backup=mybk operation=create table=jdbc.crm_city2
+2021/09/21 12:47:16 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_city2
+2021/09/21 12:47:16 debug create metadata           backup=mybk operation=create table=jdbc.crm_city2
+2021/09/21 12:47:16  info done                      backup=mybk operation=create table=jdbc.crm_city2
+2021/09/21 12:47:16 debug create data               backup=mybk operation=create table=jdbc.crm_city5
+2021/09/21 12:47:16 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_city5
+2021/09/21 12:47:16 debug create metadata           backup=mybk operation=create table=jdbc.crm_city5
+2021/09/21 12:47:16  info done                      backup=mybk operation=create table=jdbc.crm_city5
+2021/09/21 12:47:16 debug create data               backup=mybk operation=create table=jdbc.crm_company_type
+2021/09/21 12:47:16 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_company_type
+2021/09/21 12:47:16 debug create metadata           backup=mybk operation=create table=jdbc.crm_company_type
+2021/09/21 12:47:16  info done                      backup=mybk operation=create table=jdbc.crm_company_type
+2021/09/21 12:47:16 debug create data               backup=mybk operation=create table=jdbc.crm_country
+2021/09/21 12:47:16 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_country
+2021/09/21 12:47:16 debug create metadata           backup=mybk operation=create table=jdbc.crm_country
+2021/09/21 12:47:16  info done                      backup=mybk operation=create table=jdbc.crm_country
+2021/09/21 12:47:16 debug create data               backup=mybk operation=create table=jdbc.crm_invoice_delivery_tc
+2021/09/21 12:47:16 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_invoice_delivery_tc
+2021/09/21 12:47:16 debug create metadata           backup=mybk operation=create table=jdbc.crm_invoice_delivery_tc
+2021/09/21 12:47:16  info done                      backup=mybk operation=create table=jdbc.crm_invoice_delivery_tc
+2021/09/21 12:47:16 debug create data               backup=mybk operation=create table=jdbc.crm_invoice_ids
+2021/09/21 12:47:16 debug ALTER TABLE `jdbc`.`crm_invoice_ids` FREEZE WITH NAME '43ec34788fa6403db5849fa23b451373';
+2021/09/21 12:47:17 debug freezed                   backup=mybk operation=create table=jdbc.crm_invoice_ids
+2021/09/21 12:47:17 debug shadow moved              backup=mybk disk=default operation=create table=jdbc.crm_invoice_ids
+2021/09/21 12:47:17 debug SELECT * FROM system.disks;
+2021/09/21 12:47:17 debug done                      backup=mybk operation=create table=jdbc.crm_invoice_ids
+2021/09/21 12:47:17 debug create metadata           backup=mybk operation=create table=jdbc.crm_invoice_ids
+2021/09/21 12:47:17  info done                      backup=mybk operation=create table=jdbc.crm_invoice_ids
+2021/09/21 12:47:17 debug create data               backup=mybk operation=create table=jdbc.crm_invoice_origin
+2021/09/21 12:47:17 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_invoice_origin
+2021/09/21 12:47:17 debug create metadata           backup=mybk operation=create table=jdbc.crm_invoice_origin
+2021/09/21 12:47:17  info done                      backup=mybk operation=create table=jdbc.crm_invoice_origin
+2021/09/21 12:47:17 debug create data               backup=mybk operation=create table=jdbc.crm_invoice_status_delivery
+2021/09/21 12:47:17 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_invoice_status_delivery
+2021/09/21 12:47:17 debug create metadata           backup=mybk operation=create table=jdbc.crm_invoice_status_delivery
+2021/09/21 12:47:17  info done                      backup=mybk operation=create table=jdbc.crm_invoice_status_delivery
+2021/09/21 12:47:17 debug create data               backup=mybk operation=create table=jdbc.crm_invoice_status_payment
+2021/09/21 12:47:17 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_invoice_status_payment
+2021/09/21 12:47:17 debug create metadata           backup=mybk operation=create table=jdbc.crm_invoice_status_payment
+2021/09/21 12:47:17  info done                      backup=mybk operation=create table=jdbc.crm_invoice_status_payment
+2021/09/21 12:47:17 debug create data               backup=mybk operation=create table=jdbc.crm_payment_type
+2021/09/21 12:47:17 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_payment_type
+2021/09/21 12:47:17 debug create metadata           backup=mybk operation=create table=jdbc.crm_payment_type
+2021/09/21 12:47:17  info done                      backup=mybk operation=create table=jdbc.crm_payment_type
+2021/09/21 12:47:17 debug create data               backup=mybk operation=create table=jdbc.crm_product_barcode
+2021/09/21 12:47:17 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_product_barcode
+2021/09/21 12:47:17 debug create metadata           backup=mybk operation=create table=jdbc.crm_product_barcode
+2021/09/21 12:47:17  info done                      backup=mybk operation=create table=jdbc.crm_product_barcode
+2021/09/21 12:47:17 debug create data               backup=mybk operation=create table=jdbc.crm_product_bonus
+2021/09/21 12:47:17 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_product_bonus
+2021/09/21 12:47:17 debug create metadata           backup=mybk operation=create table=jdbc.crm_product_bonus
+2021/09/21 12:47:17  info done                      backup=mybk operation=create table=jdbc.crm_product_bonus
+2021/09/21 12:47:17 debug create data               backup=mybk operation=create table=jdbc.crm_product_category
+2021/09/21 12:47:17 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_product_category
+2021/09/21 12:47:17 debug create metadata           backup=mybk operation=create table=jdbc.crm_product_category
+2021/09/21 12:47:17  info done                      backup=mybk operation=create table=jdbc.crm_product_category
+2021/09/21 12:47:17 debug create data               backup=mybk operation=create table=jdbc.crm_product_type
+2021/09/21 12:47:17 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_product_type
+2021/09/21 12:47:17 debug create metadata           backup=mybk operation=create table=jdbc.crm_product_type
+2021/09/21 12:47:17  info done                      backup=mybk operation=create table=jdbc.crm_product_type
+2021/09/21 12:47:17 debug create data               backup=mybk operation=create table=jdbc.crm_shop
+2021/09/21 12:47:17 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_shop
+2021/09/21 12:47:17 debug create metadata           backup=mybk operation=create table=jdbc.crm_shop
+2021/09/21 12:47:17  info done                      backup=mybk operation=create table=jdbc.crm_shop
+2021/09/21 12:47:17 debug create data               backup=mybk operation=create table=jdbc.crm_shop_product_matrix_assortment_kind
+2021/09/21 12:47:17 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_shop_product_matrix_assortment_kind
+2021/09/21 12:47:17 debug create metadata           backup=mybk operation=create table=jdbc.crm_shop_product_matrix_assortment_kind
+2021/09/21 12:47:17  info done                      backup=mybk operation=create table=jdbc.crm_shop_product_matrix_assortment_kind
+2021/09/21 12:47:17 debug create data               backup=mybk operation=create table=jdbc.crm_site
+2021/09/21 12:47:17 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_site
+2021/09/21 12:47:17 debug create metadata           backup=mybk operation=create table=jdbc.crm_site
+2021/09/21 12:47:17  info done                      backup=mybk operation=create table=jdbc.crm_site
+2021/09/21 12:47:17 debug create data               backup=mybk operation=create table=jdbc.crm_stock_setting_sync_set10
+2021/09/21 12:47:17 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_stock_setting_sync_set10
+2021/09/21 12:47:17 debug create metadata           backup=mybk operation=create table=jdbc.crm_stock_setting_sync_set10
+2021/09/21 12:47:17  info done                      backup=mybk operation=create table=jdbc.crm_stock_setting_sync_set10
+2021/09/21 12:47:17 debug create data               backup=mybk operation=create table=jdbc.crm_stock_type
+2021/09/21 12:47:17 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_stock_type
+2021/09/21 12:47:17 debug create metadata           backup=mybk operation=create table=jdbc.crm_stock_type
+2021/09/21 12:47:17  info done                      backup=mybk operation=create table=jdbc.crm_stock_type
+2021/09/21 12:47:17 debug create data               backup=mybk operation=create table=jdbc.crm_supplier
+2021/09/21 12:47:17 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_supplier
+2021/09/21 12:47:17 debug create metadata           backup=mybk operation=create table=jdbc.crm_supplier
+2021/09/21 12:47:17  info done                      backup=mybk operation=create table=jdbc.crm_supplier
+2021/09/21 12:47:17 debug create data               backup=mybk operation=create table=jdbc.crm_supplier_2
+2021/09/21 12:47:17 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_supplier_2
+2021/09/21 12:47:17 debug create metadata           backup=mybk operation=create table=jdbc.crm_supplier_2
+2021/09/21 12:47:17  info done                      backup=mybk operation=create table=jdbc.crm_supplier_2
+2021/09/21 12:47:17 debug create data               backup=mybk operation=create table=jdbc.crm_user_group_list_content
+2021/09/21 12:47:17 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_user_group_list_content
+2021/09/21 12:47:17 debug create metadata           backup=mybk operation=create table=jdbc.crm_user_group_list_content
+2021/09/21 12:47:17  info done                      backup=mybk operation=create table=jdbc.crm_user_group_list_content
+2021/09/21 12:47:17 debug create data               backup=mybk operation=create table=jdbc.crm_vendor
+2021/09/21 12:47:17 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_vendor
+2021/09/21 12:47:17 debug create metadata           backup=mybk operation=create table=jdbc.crm_vendor
+2021/09/21 12:47:17  info done                      backup=mybk operation=create table=jdbc.crm_vendor
+2021/09/21 12:47:17 debug create data               backup=mybk operation=create table=jdbc.crm_warehouse
+2021/09/21 12:47:17 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_warehouse
+2021/09/21 12:47:17 debug create metadata           backup=mybk operation=create table=jdbc.crm_warehouse
+2021/09/21 12:47:17  info done                      backup=mybk operation=create table=jdbc.crm_warehouse
+2021/09/21 12:47:17 debug create data               backup=mybk operation=create table=jdbc.crm_warehouse_cell
+2021/09/21 12:47:17 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_warehouse_cell
+2021/09/21 12:47:17 debug create metadata           backup=mybk operation=create table=jdbc.crm_warehouse_cell
+2021/09/21 12:47:17  info done                      backup=mybk operation=create table=jdbc.crm_warehouse_cell
+2021/09/21 12:47:17 debug create data               backup=mybk operation=create table=jdbc.crm_warehouse_invoice
+2021/09/21 12:47:17 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_warehouse_invoice
+2021/09/21 12:47:17 debug create metadata           backup=mybk operation=create table=jdbc.crm_warehouse_invoice
+2021/09/21 12:47:17  info done                      backup=mybk operation=create table=jdbc.crm_warehouse_invoice
+2021/09/21 12:47:17 debug create data               backup=mybk operation=create table=jdbc.crm_warehouse_product_buffer
+2021/09/21 12:47:17 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_warehouse_product_buffer
+2021/09/21 12:47:17 debug create metadata           backup=mybk operation=create table=jdbc.crm_warehouse_product_buffer
+2021/09/21 12:47:17  info done                      backup=mybk operation=create table=jdbc.crm_warehouse_product_buffer
+2021/09/21 12:47:17 debug create data               backup=mybk operation=create table=jdbc.crm_warehouse_transfer
+2021/09/21 12:47:17 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.crm_warehouse_transfer
+2021/09/21 12:47:17 debug create metadata           backup=mybk operation=create table=jdbc.crm_warehouse_transfer
+2021/09/21 12:47:17  info done                      backup=mybk operation=create table=jdbc.crm_warehouse_transfer
+2021/09/21 12:47:17 debug create data               backup=mybk operation=create table=jdbc.vi_crm_category_product
+2021/09/21 12:47:17 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.vi_crm_category_product
+2021/09/21 12:47:17 debug create metadata           backup=mybk operation=create table=jdbc.vi_crm_category_product
+2021/09/21 12:47:17  info done                      backup=mybk operation=create table=jdbc.vi_crm_category_product
+2021/09/21 12:47:17 debug create data               backup=mybk operation=create table=jdbc.vi_crm_company
+2021/09/21 12:47:17 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.vi_crm_company
+2021/09/21 12:47:17 debug create metadata           backup=mybk operation=create table=jdbc.vi_crm_company
+2021/09/21 12:47:17  info done                      backup=mybk operation=create table=jdbc.vi_crm_company
+2021/09/21 12:47:17 debug create data               backup=mybk operation=create table=jdbc.vi_crm_payment_type
+2021/09/21 12:47:17 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.vi_crm_payment_type
+2021/09/21 12:47:17 debug create metadata           backup=mybk operation=create table=jdbc.vi_crm_payment_type
+2021/09/21 12:47:17  info done                      backup=mybk operation=create table=jdbc.vi_crm_payment_type
+2021/09/21 12:47:17 debug create data               backup=mybk operation=create table=jdbc.vi_crm_user
+2021/09/21 12:47:17 debug skip table backup         backup=mybk engine=JDBC operation=create table=jdbc.vi_crm_user
+2021/09/21 12:47:17 debug create metadata           backup=mybk operation=create table=jdbc.vi_crm_user
+2021/09/21 12:47:17  info done                      backup=mybk operation=create table=jdbc.vi_crm_user
+2021/09/21 12:47:17 debug create data               backup=mybk operation=create table=petshop.client_with_smart_order
+2021/09/21 12:47:17 debug skip table backup         backup=mybk engine=Log operation=create table=petshop.client_with_smart_order
+2021/09/21 12:47:17 debug create metadata           backup=mybk operation=create table=petshop.client_with_smart_order
+2021/09/21 12:47:17  info done                      backup=mybk operation=create table=petshop.client_with_smart_order
+2021/09/21 12:47:17 debug create data               backup=mybk operation=create table=petshop.cohort_cache
+2021/09/21 12:47:17 debug ALTER TABLE `petshop`.`cohort_cache` FREEZE WITH NAME 'c1e0a6750af844b4850a625fffea7814';
+2021/09/21 12:47:17 debug freezed                   backup=mybk operation=create table=petshop.cohort_cache
+2021/09/21 12:47:17 debug shadow moved              backup=mybk disk=default operation=create table=petshop.cohort_cache
+2021/09/21 12:47:17 debug SELECT * FROM system.disks;
+2021/09/21 12:47:17 debug done                      backup=mybk operation=create table=petshop.cohort_cache
+2021/09/21 12:47:17 debug create metadata           backup=mybk operation=create table=petshop.cohort_cache
+2021/09/21 12:47:17  info done                      backup=mybk operation=create table=petshop.cohort_cache
+2021/09/21 12:47:17 debug create data               backup=mybk operation=create table=petshop.crm_advance_payment
+2021/09/21 12:47:17 debug ALTER TABLE `petshop`.`crm_advance_payment` FREEZE WITH NAME 'db8d331ccae74f829379e5aca8e8f169';
+2021/09/21 12:47:17 debug freezed                   backup=mybk operation=create table=petshop.crm_advance_payment
+2021/09/21 12:47:17 debug SELECT * FROM system.disks;
+2021/09/21 12:47:17 debug done                      backup=mybk operation=create table=petshop.crm_advance_payment
+2021/09/21 12:47:17 debug create metadata           backup=mybk operation=create table=petshop.crm_advance_payment
+2021/09/21 12:47:17  info done                      backup=mybk operation=create table=petshop.crm_advance_payment
+2021/09/21 12:47:17 debug create data               backup=mybk operation=create table=petshop.crm_client_retail
+2021/09/21 12:47:17 debug ALTER TABLE `petshop`.`crm_client_retail` FREEZE WITH NAME 'ed9aadac22024fd79072bfe90eb6302b';
+2021/09/21 12:47:19 debug freezed                   backup=mybk operation=create table=petshop.crm_client_retail
+2021/09/21 12:47:21 debug shadow moved              backup=mybk disk=default operation=create table=petshop.crm_client_retail
+2021/09/21 12:47:21 debug SELECT * FROM system.disks;
+2021/09/21 12:47:21 debug done                      backup=mybk operation=create table=petshop.crm_client_retail
+2021/09/21 12:47:21 debug create metadata           backup=mybk operation=create table=petshop.crm_client_retail
+2021/09/21 12:47:21  info done                      backup=mybk operation=create table=petshop.crm_client_retail
+2021/09/21 12:47:21 debug create data               backup=mybk operation=create table=petshop.crm_client_retail_address
+2021/09/21 12:47:21 debug ALTER TABLE `petshop`.`crm_client_retail_address` FREEZE WITH NAME '548ec0ca2ece45b99abd489d6758bdc4';
+2021/09/21 12:47:23 debug freezed                   backup=mybk operation=create table=petshop.crm_client_retail_address
+2021/09/21 12:47:26 debug shadow moved              backup=mybk disk=default operation=create table=petshop.crm_client_retail_address
+2021/09/21 12:47:26 debug SELECT * FROM system.disks;
+2021/09/21 12:47:26 debug done                      backup=mybk operation=create table=petshop.crm_client_retail_address
+2021/09/21 12:47:26 debug create metadata           backup=mybk operation=create table=petshop.crm_client_retail_address
+2021/09/21 12:47:26  info done                      backup=mybk operation=create table=petshop.crm_client_retail_address
+2021/09/21 12:47:26 debug create data               backup=mybk operation=create table=petshop.crm_client_retail_billing
+2021/09/21 12:47:26 debug ALTER TABLE `petshop`.`crm_client_retail_billing` FREEZE WITH NAME '4a52b4ecfb84448aaeb2c57557a09bbe';
+2021/09/21 12:47:27 debug freezed                   backup=mybk operation=create table=petshop.crm_client_retail_billing
+2021/09/21 12:47:31 debug shadow moved              backup=mybk disk=default operation=create table=petshop.crm_client_retail_billing
+2021/09/21 12:47:31 debug SELECT * FROM system.disks;
+2021/09/21 12:47:31 debug done                      backup=mybk operation=create table=petshop.crm_client_retail_billing
+2021/09/21 12:47:31 debug create metadata           backup=mybk operation=create table=petshop.crm_client_retail_billing
+2021/09/21 12:47:31  info done                      backup=mybk operation=create table=petshop.crm_client_retail_billing
+2021/09/21 12:47:31 debug create data               backup=mybk operation=create table=petshop.crm_client_retail_children
+2021/09/21 12:47:31 debug ALTER TABLE `petshop`.`crm_client_retail_children` FREEZE WITH NAME 'a943c1be5c1f49e49d8cc831d38d8cc3';
+2021/09/21 12:47:31 debug freezed                   backup=mybk operation=create table=petshop.crm_client_retail_children
+2021/09/21 12:47:32 debug shadow moved              backup=mybk disk=default operation=create table=petshop.crm_client_retail_children
+2021/09/21 12:47:32 debug SELECT * FROM system.disks;
+2021/09/21 12:47:32 debug done                      backup=mybk operation=create table=petshop.crm_client_retail_children
+2021/09/21 12:47:32 debug create metadata           backup=mybk operation=create table=petshop.crm_client_retail_children
+2021/09/21 12:47:32  info done                      backup=mybk operation=create table=petshop.crm_client_retail_children
+2021/09/21 12:47:32 debug create data               backup=mybk operation=create table=petshop.crm_client_retail_contact
+2021/09/21 12:47:32 debug ALTER TABLE `petshop`.`crm_client_retail_contact` FREEZE WITH NAME 'c9d63e675b104b759b603bf972ce9482';
+2021/09/21 12:47:33 debug freezed                   backup=mybk operation=create table=petshop.crm_client_retail_contact
+2021/09/21 12:47:35 debug shadow moved              backup=mybk disk=default operation=create table=petshop.crm_client_retail_contact
+2021/09/21 12:47:35 debug SELECT * FROM system.disks;
+2021/09/21 12:47:35 debug done                      backup=mybk operation=create table=petshop.crm_client_retail_contact
+2021/09/21 12:47:35 debug create metadata           backup=mybk operation=create table=petshop.crm_client_retail_contact
+2021/09/21 12:47:35  info done                      backup=mybk operation=create table=petshop.crm_client_retail_contact
+2021/09/21 12:47:35 debug create data               backup=mybk operation=create table=petshop.crm_client_retail_sms_mailing_rejection
+2021/09/21 12:47:35 debug ALTER TABLE `petshop`.`crm_client_retail_sms_mailing_rejection` FREEZE WITH NAME 'ca31b082883143c1bb3d9acd7dc5e0ce';
+2021/09/21 12:47:35 debug freezed                   backup=mybk operation=create table=petshop.crm_client_retail_sms_mailing_rejection
+2021/09/21 12:47:35 debug shadow moved              backup=mybk disk=default operation=create table=petshop.crm_client_retail_sms_mailing_rejection
+2021/09/21 12:47:35 debug SELECT * FROM system.disks;
+2021/09/21 12:47:35 debug done                      backup=mybk operation=create table=petshop.crm_client_retail_sms_mailing_rejection
+2021/09/21 12:47:35 debug create metadata           backup=mybk operation=create table=petshop.crm_client_retail_sms_mailing_rejection
+2021/09/21 12:47:35  info done                      backup=mybk operation=create table=petshop.crm_client_retail_sms_mailing_rejection
+2021/09/21 12:47:35 debug create data               backup=mybk operation=create table=petshop.crm_client_wholesale
+2021/09/21 12:47:35 debug ALTER TABLE `petshop`.`crm_client_wholesale` FREEZE WITH NAME '1f64a3299ee0434b860fa5d42e7b5e39';
+2021/09/21 12:47:37 debug freezed                   backup=mybk operation=create table=petshop.crm_client_wholesale
+2021/09/21 12:47:47 debug shadow moved              backup=mybk disk=default operation=create table=petshop.crm_client_wholesale
+2021/09/21 12:47:47 debug SELECT * FROM system.disks;
+2021/09/21 12:47:47 debug done                      backup=mybk operation=create table=petshop.crm_client_wholesale
+2021/09/21 12:47:47 debug create metadata           backup=mybk operation=create table=petshop.crm_client_wholesale
+2021/09/21 12:47:47  info done                      backup=mybk operation=create table=petshop.crm_client_wholesale
+2021/09/21 12:47:47 debug create data               backup=mybk operation=create table=petshop.crm_client_wholesale_address
+2021/09/21 12:47:47 debug ALTER TABLE `petshop`.`crm_client_wholesale_address` FREEZE WITH NAME '47f54773a7bb40ca93582e2e260d2218';
+2021/09/21 12:47:47 debug freezed                   backup=mybk operation=create table=petshop.crm_client_wholesale_address
+2021/09/21 12:47:49 debug shadow moved              backup=mybk disk=default operation=create table=petshop.crm_client_wholesale_address
+2021/09/21 12:47:49 debug SELECT * FROM system.disks;
+2021/09/21 12:47:49 debug done                      backup=mybk operation=create table=petshop.crm_client_wholesale_address
+2021/09/21 12:47:49 debug create metadata           backup=mybk operation=create table=petshop.crm_client_wholesale_address
+2021/09/21 12:47:49  info done                      backup=mybk operation=create table=petshop.crm_client_wholesale_address
+2021/09/21 12:47:49 debug create data               backup=mybk operation=create table=petshop.crm_client_wholesale_promo
+2021/09/21 12:47:49 debug ALTER TABLE `petshop`.`crm_client_wholesale_promo` FREEZE WITH NAME '3313ab1710e1441382ab69defba4d971';
+2021/09/21 12:47:49 debug freezed                   backup=mybk operation=create table=petshop.crm_client_wholesale_promo
+2021/09/21 12:47:49 debug shadow moved              backup=mybk disk=default operation=create table=petshop.crm_client_wholesale_promo
+2021/09/21 12:47:49 debug SELECT * FROM system.disks;
+2021/09/21 12:47:49 debug done                      backup=mybk operation=create table=petshop.crm_client_wholesale_promo
+2021/09/21 12:47:49 debug create metadata           backup=mybk operation=create table=petshop.crm_client_wholesale_promo
+2021/09/21 12:47:49  info done                      backup=mybk operation=create table=petshop.crm_client_wholesale_promo
+2021/09/21 12:47:49 debug create data               backup=mybk operation=create table=petshop.crm_discount_retail
+2021/09/21 12:47:49 debug ALTER TABLE `petshop`.`crm_discount_retail` FREEZE WITH NAME '1661c54cf8d744ad952696f126be7f54';
+2021/09/21 12:47:50 debug freezed                   backup=mybk operation=create table=petshop.crm_discount_retail
+2021/09/21 12:47:51 debug shadow moved              backup=mybk disk=default operation=create table=petshop.crm_discount_retail
+2021/09/21 12:47:51 debug SELECT * FROM system.disks;
+2021/09/21 12:47:51 debug done                      backup=mybk operation=create table=petshop.crm_discount_retail
+2021/09/21 12:47:51 debug create metadata           backup=mybk operation=create table=petshop.crm_discount_retail
+2021/09/21 12:47:51  info done                      backup=mybk operation=create table=petshop.crm_discount_retail
+2021/09/21 12:47:51 debug create data               backup=mybk operation=create table=petshop.crm_discount_wholesale
+2021/09/21 12:47:51 debug ALTER TABLE `petshop`.`crm_discount_wholesale` FREEZE WITH NAME '12f014f50bc2416d82188c70e7d419b6';
+2021/09/21 12:47:51 debug freezed                   backup=mybk operation=create table=petshop.crm_discount_wholesale
+2021/09/21 12:47:52 debug shadow moved              backup=mybk disk=default operation=create table=petshop.crm_discount_wholesale
+2021/09/21 12:47:52 debug SELECT * FROM system.disks;
+2021/09/21 12:47:52 debug done                      backup=mybk operation=create table=petshop.crm_discount_wholesale
+2021/09/21 12:47:52 debug create metadata           backup=mybk operation=create table=petshop.crm_discount_wholesale
+2021/09/21 12:47:52  info done                      backup=mybk operation=create table=petshop.crm_discount_wholesale
+2021/09/21 12:47:52 debug create data               backup=mybk operation=create table=petshop.crm_discount_wholesale_personal
+2021/09/21 12:47:52 debug ALTER TABLE `petshop`.`crm_discount_wholesale_personal` FREEZE WITH NAME 'dc8d56d68b2d4345b91bb5c0f60f3401';
+2021/09/21 12:48:56 error can't freeze table: code: 84, message: Directory /var/lib/clickhouse/shadow/dc8d56d68b2d4345b91bb5c0f60f3401/data/petshop/crm_discount_wholesale_personal/0_1_1_11 already exists and is not empty. backup=mybk operation=create table=petshop.crm_discount_wholesale_personal
+2021/09/21 12:48:56 debug SELECT value FROM `system`.`build_options` where name='VERSION_INTEGER'
+2021/09/21 12:48:56 debug SELECT * FROM system.disks;
+2021/09/21 12:48:56 debug SELECT value FROM `system`.`build_options` where name='VERSION_INTEGER'
+2021/09/21 12:48:56 debug SELECT * FROM system.disks;
+2021/09/21 12:48:56 debug remove 'mybk'             path=/var/lib/clickhouse/
+2021/09/21 12:49:01  info done                      backup=mybk duration=5.532s location=local operation=delete
+2021/09/21 12:49:01 error can't freeze table: code: 84, message: Directory /var/lib/clickhouse/shadow/dc8d56d68b2d4345b91bb5c0f60f3401/data/petshop/crm_discount_wholesale_personal/0_1_1_11 already exists and is not empty.
